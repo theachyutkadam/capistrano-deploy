@@ -91,6 +91,10 @@ GEM
       reline (>= 0.3.1)
     digest (3.1.0)
     erubi (1.10.0)
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -103,6 +107,7 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
+    jwt (2.5.0)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -170,6 +175,7 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.3.0)
       childprocess (>= 0.5, < 5.0)
@@ -192,6 +198,10 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
+    twilio-ruby (5.72.0)
+      faraday (>= 0.9, < 3.0)
+      jwt (>= 1.5, <= 2.5)
+      nokogiri (>= 1.6, < 2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     web-console (4.2.0)
@@ -228,6 +238,7 @@ DEPENDENCIES
   sprockets-rails
   stimulus-rails
   turbo-rails
+  twilio-ruby (~> 5.72.0)
   tzinfo-data
   web-console
   webdrivers
